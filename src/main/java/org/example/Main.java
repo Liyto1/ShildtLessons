@@ -2,14 +2,10 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Test ob1 = new Test(2);
-        Test ob2 ;
+        Factorial f = new Factorial();
 
-        ob2 = ob1.incrByTen();
-        System.out.println("ob1.a: " + ob1.a);
-        System.out.println("ob2.a: " + ob2.a);
-
-        ob2 = ob2.incrByTen();
-        System.out.println("ob2.a після другогозбільшення : " + ob2.a);
+        System.out.println("Факторіал 3 дорівнює: "+ f.fact(3));
+        System.out.println("Факторіал 4 дорівнює: "+ f.fact(4));
+        System.out.println("Факторіал 5 дорівнює: "+ f.fact(5));
     }
 }
