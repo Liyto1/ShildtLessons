@@ -2,15 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        Test ob1 = new Test(2);
+        Test ob2 ;
 
-        Test ob = new Test();
+        ob2 = ob1.incrByTen();
+        System.out.println("ob1.a: " + ob1.a);
+        System.out.println("ob2.a: " + ob2.a);
 
-        int a = 15, b = 20;
-
-        System.out.println("a і b до виклику: "+ a + " "+ b);
-
-        ob.meth(a,b);
-
-        System.out.println("a i b після виклику: "+ a + " "+ b);
+        ob2 = ob2.incrByTen();
+        System.out.println("ob2.a після другогозбільшення : " + ob2.a);
     }
 }

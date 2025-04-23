@@ -1,8 +1,14 @@
 package org.example;
 
 public class Test {
-    void meth (int i, int j){
-        i *= 2;
-        j /= 2;
-    }
+   int a ;
+
+   Test(int i){
+       a=i;
+   }
+
+   Test incrByTen(){
+       Test temp = new Test(a+10);
+       return temp;
+   }
 }
