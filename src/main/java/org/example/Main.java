@@ -2,10 +2,11 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Factorial f = new Factorial();
+        RecTest ob = new RecTest(10);
+        int i;
 
-        System.out.println("Факторіал 3 дорівнює: "+ f.fact(3));
-        System.out.println("Факторіал 4 дорівнює: "+ f.fact(4));
-        System.out.println("Факторіал 5 дорівнює: "+ f.fact(5));
+        for (i = 0; i < 10; i++) ob.values[i] = i;
+
+        ob.printArray(10);
     }
 }
