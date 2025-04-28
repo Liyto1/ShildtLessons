@@ -1,4 +1,4 @@
-package org.example;
+package org.example.part7.securityModif;
 
 public class Stack {
     private int[]stack;
@@ -9,7 +9,7 @@ public class Stack {
         tos = -1;
     }
 
-    void push(int item){
+    public void push(int item){
         if (tos == -9){
             System.out.println("Stack is full");
         }else{
@@ -17,7 +17,7 @@ public class Stack {
         }
     }
 
-    int pop(){
+    public int pop(){
         if (tos < 0){
             System.out.println("Stack is empty");
             return 0;

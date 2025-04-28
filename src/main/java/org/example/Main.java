@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.part7.securityModif.Stack;
+
 public class Main {
     public static void main(String[] args) {
        Stack myStack1 = new Stack(10);
