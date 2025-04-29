@@ -1,14 +1,21 @@
 package org.example;
 
 
+import org.example.part7.securityModif.Stack;
+
 public class Main {
     public static void main(String[] args) {
-        int[]a1 = new int[10];
-        int[]a2 = {3, 5, 7, 1, 8, 99, 44, -10};
-        int[]a3  ={4,3,2,1};
+        Stack myStack1 = new Stack(5);
+        Stack myStack2 = new Stack(8);
 
-        System.out.println("length of a1: " + a1.length);
-        System.out.println("length of a2: " + a2.length);
-        System.out.println("length of a3: " + a3.length);
+        for (int i = 0; i < 5; i++) myStack1.push(i);
+
+        for (int i = 0; i < 8; i++) myStack2.push(i);
+
+        System.out.println("myStack1: ");
+        for (int i = 0; i < 5; i++) System.out.println(myStack1.pop());
+
+        System.out.println("myStack2: ");
+        for (int i = 0; i < 8; i++) System.out.println(myStack2.pop());
     }
 }
