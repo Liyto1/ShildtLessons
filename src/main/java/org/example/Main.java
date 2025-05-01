@@ -4,24 +4,19 @@ package org.example;
 import org.example.part7.innerClass.Outer;
 
 public class Main {
+
+    static void vaTest(int ... v ){
+        System.out.print("number of args: " + v.length + " contain: ");
+
+        for(int x: v){
+            System.out.print(x+ " ");
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
-        String strOb1 = "First string";
-        String strOb2 = "Second string";
-        String strOb3 = strOb1;
-
-        System.out.println("length of strOb1: "+ strOb1.length());
-        System.out.println("character of strOb1 with index 3 : "+ strOb1.charAt(3));
-
-        if(strOb1.equals(strOb2)){
-            System.out.println("strOb1 equals strOb2");
-        }else{
-            System.out.println("strOb1 not equals strOb2");
-        }
-
-        if(strOb1.equals(strOb3)){
-            System.out.println("strOb1 equals strOb3");
-        }else{
-            System.out.println("strOb1 not equals strOb3");
-        }
+        vaTest(10);
+        vaTest(1,2,3);
+        vaTest();
     }
 }
